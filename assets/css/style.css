@@ -1,0 +1,11 @@
+body {
+    background-color: grey;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+#cadre {
+    background-color: white;
+    margin-top: 10rem;
+    border-radius: 25rem 25rem 25rem 25rem;
+}
