@@ -9,20 +9,18 @@
         /* choisir un mot au hasard dans "list", le mettre dans une nouvelle table 
         en faisant un split du mot et ainsi détecter sa longueur*/
         function selectWord() {
-            function returnIndex(index) {
-                return Math.floor(Math.random() * Math.floor(index));
-            }
-            return alpha[returnIndex(alpha.length)];
+            return Math.floor(Math.random() * alpha.length);
         }
         /*afficher autant de "_" que de nombres de lettre du mot*/
 
         /*capter l'entée au clavier de l'utilisateur*/
-        let choix =
-            /*Si la lettre entrée est bonne, l'afficher autant de fois qu'elle est présente 
-            dans le mot et au bon endroit*/
-            /*Si la lettre n'est pas présente, l'afficher dans la liste des mauvaises 
-            lettres, ajouter +1 au compteur d'essais (7 fois max) et passer à l'image suivante*/
 
-            /*Si l'utilisateur ne trouve pas le mot, lui dire qu'il a perdu et arrêter le jeu*/
+
+        /*Si la lettre entrée est bonne, l'afficher autant de fois qu'elle est présente 
+        dans le mot et au bon endroit*/
+        /*Si la lettre n'est pas présente, l'afficher dans la liste des mauvaises 
+        lettres, ajouter +1 au compteur d'essais (7 fois max) et passer à l'image suivante*/
+
+        /*Si l'utilisateur ne trouve pas le mot, lui dire qu'il a perdu et arrêter le jeu*/
     });
 })();
