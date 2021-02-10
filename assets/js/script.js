@@ -2,17 +2,21 @@
 let list = ["cheval", "rouler", "moderne", "neige", "orange", "ordinateur", "potiron", "ours", "pays", " pizza", "classe", "formation", "hamburger", "sauce"];
 let gallery = ["./assets/img/P1.png", "./assets/img/P2.png", "./assets/img/P3.png", "./assets/img/P4.png", "./assets/img/P5.png", "./assets/img/P6.png", "./assets/img/P7.png", ];
 let array = [];
+let motArr = '';
 let tiret = [];
+let entree = [];
 let tiretAff = ' ';
 // -------------------------------------------------------------------------------
 /* choisir un mot au hasard dans "list", le mettre dans une nouvelle table 
     en faisant un split du mot et ainsi détecter sa longueur*/
 
 //générer un index random pour parcourir "list"
-let randomWord = Math.floor(Math.random() * list.length);
-array = randomWord.split('');
-array.forEach(function(element)) {
-tiret.push("_");
+function randomWord() {
+    motArr = list[Math.floor(Math.random() * list.length)];
+}
+let motArrSplt = randomWord.split('');
+array.forEach(function(element) {
+    // tiret.innerHTML("_");
 });
 // -------------------------------------------------------------------------------
 
@@ -21,18 +25,22 @@ tiret.push("_");
 
 // -------------------------------------------------------------------------------
 
-/*capter l'entée au clavier de l'utilisateur*/
-function choix() {
-    for (let index = 0; index < array.length; index++) {
-        let letter = document.createTextNode(entUser(index));
-    }
-    return letter;
-}
+//capter l'entée au clavier de l'utilisateur
+document.getElementById("entUser").addEventListener("change", (event) => {
+    let txT = event.target.value;
+
+});
+document.getElementById("valWord").addEventListener("click", () => {
+    let txT = document.getElementById("entUser").value;
+    entree.push(txT);
+    console.log(entree);
+});
 
 // -------------------------------------------------------------------------------
 
 /*Si la lettre entrée est bonne, l'afficher autant de fois qu'elle est présente 
 dans le mot et au bon endroit*/
+
 /*Si la lettre n'est pas présente, l'afficher dans la liste des mauvaises 
 lettres, ajouter +1 au compteur d'essais (7 fois max) et passer à l'image suivante*/
 
@@ -41,6 +49,14 @@ lettres, ajouter +1 au compteur d'essais (7 fois max) et passer à l'image suiva
 
 // démarrer une nouvelle partie au clique du bouton
 document.getElementById("nouv").addEventListener("click", () => {
+    location.reload();
+});
 
-    window.onload = init;
-}); /*capter l'entée au clavier de l'utilisateur*/
+
+
+
+/*
+function aleaNumber(min,max){ 
+    let alea = min + Math.floor(Math.round(Math.random() * (max-min)) * 100)/100; return alea; 
+}
+*/

@@ -30,15 +30,21 @@
     <main class="container-fluid align-content-lg-center">
         <section id="cadre" class="row container-md p-3 my-3 align-content-lg-center border border-success">
             <section class="col-md-4">
-                <img id="pendu" src="./assets/img/P1.png" class="img-fluid rounded mx-auto d-block" alt="Logo Woods 4.27">
+                <img id="pendu" src="./assets/img/0.png" class="img-fluid rounded mx-auto d-block" alt="pendu">
             </section>
             <section class="col-md-4">
                 <h4>Mot à trouver :</h4>
-                <p id=newWord></p>
+                <p id=motTrouv></p>
             </section>
             <section class="col-md-4">
+                <!--<input type="text" oninput="myFunction()"></input> / détecte la saisie de l'input et l'envoi vers une fonction-->
                 <input type="text" class="form-control border border-dark" placeholder="Entrer une lettre" id="entUser">
+                <button id="valWord" type="button" class="btn btn-outline-dark">Valider</button>
                 <p id="choixUser"></p>
+            </section>
+
+            <section id="letChoix">
+
             </section>
             <section>
                 <button id="nouv" type="button" class="btn btn-outline-dark col-md-12">Nouvelle partie</button>
@@ -56,7 +62,7 @@
             </h6>
         </section>
     </footer>
-    <script src="./assets/js/script.js">
+    <script src="./assets/js/script2.js">
     </script>
 </body>
 
