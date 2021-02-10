@@ -1,6 +1,7 @@
 let list = ["cheval", "rouler", "moderne", "neige", "orange", "ordinateur", "potiron", "ours", "pays", "pizza", "classe", "formation", "hamburger", "sauce"];
 let motArr = ''; // reslutat mot random
 let entree = []; //stockage saisie user
+let fake = []; // mauvaise entrée
 let txT = ''; // Entrée user
 let motArrSplit = ''; //split du mot à trouver
 let tiret = ''; // affiche le mot à l'écran avec les "_"
@@ -11,14 +12,14 @@ let max = 6;
 function randomWord() {
     motArr = list[Math.floor(Math.random() * list.length)];
     motArrSplit = motArr.split('');
-    //console.log(motArrSplit);
+    console.log(motArrSplit);
 }
 randomWord();
 
 //capter l'entée au clavier de l'utilisateur
 document.getElementById("valWord").addEventListener("click", () => {
     txT = document.getElementById("entUser").value;
-    //console.log(entree);
+    console.log(entree);
     verif(txT);
 });
 
@@ -33,10 +34,13 @@ function verif(letSplit) {
     } else if (motArrSplit.indexOf(letSplit) === -1) {
         min++;
         console.log("prout");
+        fake.push(txT);
+        document.getElementById("letChoix").innerHTML = fake;
         lose();
         image();
     }
 }
+
 
 //Condition de victoire et de défaite 
 function win() {
@@ -60,10 +64,12 @@ function image() {
     document.getElementById("pendu").src = './assets/img/' + min + '.png';
 }
 image();
+
 //Mapping du mot à trouver
 function mapping() {
     tiret = motArr.split('').map(index => (entree.indexOf(index) >= 0 ? index : ' _ ')).join(''); // cond ? : = if cond elsif
     document.getElementById("motTrouv").innerHTML = tiret;
+
 }
 mapping();
 
