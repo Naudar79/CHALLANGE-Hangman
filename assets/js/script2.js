@@ -12,7 +12,7 @@ let max = 6;
 function randomWord() {
     motArr = list[Math.floor(Math.random() * list.length)];
     motArrSplit = motArr.split('');
-    console.log(motArrSplit);
+    //console.log(motArrSplit);
 }
 randomWord();
 
@@ -21,7 +21,7 @@ document.getElementById("valWord").addEventListener("click", () => {
     txT = document.getElementById("entUser").value;
     document.getElementById("entUser").focus();
     document.getElementById("entUser").value = '';
-    console.log(entree);
+    //console.log(entree);
     verif(txT);
 });
 
@@ -30,12 +30,12 @@ function verif(letSplit) {
 
     if (motArrSplit.indexOf(letSplit) >= 0) {
         entree.push(txT);
-        console.log("pwet");
+        //console.log("pwet");
         mapping();
         win();
     } else if (motArrSplit.indexOf(letSplit) === -1) {
         min++;
-        console.log("prout");
+        //console.log("prout");
         fake.push(txT);
         document.getElementById("letChoix").innerHTML = fake;
         lose();
