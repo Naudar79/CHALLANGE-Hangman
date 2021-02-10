@@ -11,14 +11,14 @@ let max = 6;
 function randomWord() {
     motArr = list[Math.floor(Math.random() * list.length)];
     motArrSplit = motArr.split('');
-    console.log(motArrSplit);
+    //console.log(motArrSplit);
 }
 randomWord();
 
 //capter l'entée au clavier de l'utilisateur
 document.getElementById("valWord").addEventListener("click", () => {
     txT = document.getElementById("entUser").value;
-    console.log(entree);
+    //console.log(entree);
     verif(txT);
 });
 
