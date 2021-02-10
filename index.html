@@ -22,7 +22,7 @@
     </audio>
 
     <header>
-        <section class="container-md p-3 my-3 align-content-lg-center text-center">
+        <section class="container-md p-3 my-3 text-center">
             <h1>
                 <p id="titleGame">
                     Jeu du pendu minimaliste
@@ -32,7 +32,7 @@
     </header>
 
     <main class="container-fluid">
-        <section id="cadre" class="row container-md p-3 my-3 align-content-center border border-dark">
+        <section id="cadre" class="row container-md p-3 my-3 border border-dark center-block">
 
             <section class="col-md-12">
                 <img id="pendu" src="./assets/img/0.png" class="img-fluid rounded mx-auto d-block" alt="pendu">
@@ -43,8 +43,10 @@
                 <p id=motTrouv></p>
             </section>
 
-            <section id="write" class="col-md-4">
-                <input type="text" class="form-control border border-dark" placeholder="Entrer une lettre" id="entUser">
+            <section id="write" class="col-md-12">
+                <section class="col-md-6 from-group w-25">
+                    <input type="text" class="form-control border border-dark col-md-4 m-auto" placeholder="Entrer une lettre" id="entUser">
+                </section>
                 <button id="valWord" type="button" class="btn btn-dark">Valider</button>
                 <p id="choixUser"></p>
             </section>
