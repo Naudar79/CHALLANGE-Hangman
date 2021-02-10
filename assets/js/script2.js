@@ -19,6 +19,8 @@ randomWord();
 //capter l'entée au clavier de l'utilisateur
 document.getElementById("valWord").addEventListener("click", () => {
     txT = document.getElementById("entUser").value;
+    document.getElementById("entUser").focus();
+    document.getElementById("entUser").value = '';
     console.log(entree);
     verif(txT);
 });
