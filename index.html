@@ -16,11 +16,16 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
+<!---------------------------------------------------------------------------------------------------------------------------->
+
 <body>
+
+    <!-- load le fichier audio au  refresh de la page -->
     <audio preload="auto" autoplay>
         <source src="./assets/song/gameboy-on_off-m-sdo.png.mp3" type="audio/mp3">
     </audio>
 
+    <!-- HEADER de la page, c'est la zone de haut de page ou l'on retrouve le titre du jeu -->
     <header>
         <section class="container-md p-3 my-3 text-center">
             <h1>
@@ -30,10 +35,13 @@
             </h1>
         </section>
     </header>
-
+    <!---------------------------------------------------------------------------------------------------------------------------->
+    <!-- MAIN, c'est ici que ça se passe ! bloc principal -->
     <main class="container-fluid d-flex justify-content-center col-md-6">
+
         <section id="cadre" class="row container-md p-3 my-3 border border-dark center-block">
 
+            <!-- On affiche l'image du pendu qui sera modifiée par le Js -->
             <section class="col-md-12">
                 <img id="pendu" src="./assets/img/0.png" class="img-fluid rounded mx-auto d-block" alt="pendu">
             </section>
@@ -43,6 +51,9 @@
                 <p id=motTrouv></p>
             </section>
 
+            <!---------------------------------------------------------------------------------------------------------------------------->
+
+            <!-- Dans ce bloc, on demande à l'utilisateur d'entrer une et une seule lettre et on valide avec le bouton -->
             <section id="write" class="col-md-12">
                 <section class="col-md-6 mx-auto">
                     <input type="text" class="form-control border border-dark col-md-3" placeholder="Entrer une lettre" id="entUser">
@@ -50,6 +61,8 @@
                 <button id="valWord" type="button" class="btn btn-dark">Valider</button>
                 <p id="choixUser"></p>
             </section>
+
+            <!-- Dans cette section, on affiche les lettres qui ne sont pas dans le mot -->
             <section class="col-md-12">
                 <h4>Mauvaises lettres :</h4>
             </section>
@@ -57,11 +70,14 @@
 
             </section>
 
+            <!-- Bouton qui reload la page web -->
             <section>
                 <button id="nouv" type="button" class="btn btn-dark col-md-6">Nouvelle partie</button>
             </section>
         </section>
     </main>
+
+    <!---------------------------------------------------------------------------------------------------------------------------->
 
     <footer>
         <section class="container-md-12 p-3 my-3 align-content-lg-center text-center">

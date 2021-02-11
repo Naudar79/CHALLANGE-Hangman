@@ -13,6 +13,12 @@ Le jeu se termine si le joueur trouve le mot avant les 7 essais soit s'il ne tro
 
 Pour pouvoir jouer, il vous faut un terminal fixe ou mobil ayant un accès à internet. 
 
+> Fonctionne sur les naviogateurs :
+* Chrome (ne fait pas le "bip" au premier chargement de la page)
+* Firefox (ne fait pas le "bip" de nouvelle partie)
+* Edge (fait le "bip" dès le load de la page)
+
+
 ### Installation
 
 Le jeu est disponible directement par internet, il ne nécessite donc pas d'installation.
@@ -43,4 +49,4 @@ V 1.0
 
 ## License
 
-N/D  Ce projet n'est sous aucune licence.
+Ce projet n'est sous aucune licence.
