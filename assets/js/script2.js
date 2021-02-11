@@ -81,11 +81,3 @@ mapping();
 document.getElementById("nouv").addEventListener("click", () => {
     location.reload();
 });
-
-window.onload = function() {
-    var audio = document.getElementById("audio");
-    audio.src = URL.createObjectURL("../assets/song/Zelda_Labryinth.mp3");
-    audio.load();
-    audio.play();
-    console.log("song");
-};
