@@ -17,9 +17,9 @@
 </head>
 
 <body>
-    <audio preload="auto" autoplay loop>
+    <!--<audio preload="auto" autoplay loop>
         <source src="./assets/song/Zelda_Labryinth.mp3" type="audio/mp3">
-    </audio>
+    </audio>-->
 
     <header>
         <section class="container-md p-3 my-3 text-center">
@@ -31,7 +31,7 @@
         </section>
     </header>
 
-    <main class="container-fluid">
+    <main class="container-fluid d-flex justify-content-center">
         <section id="cadre" class="row container-md p-3 my-3 border border-dark center-block">
 
             <section class="col-md-12">
@@ -44,8 +44,8 @@
             </section>
 
             <section id="write" class="col-md-12">
-                <section class="col-md-6 from-group w-25">
-                    <input type="text" class="form-control border border-dark col-md-4 m-auto" placeholder="Entrer une lettre" id="entUser">
+                <section class="col-md-6 mx-auto">
+                    <input type="text" class="form-control border border-dark col-md-3" placeholder="Entrer une lettre" id="entUser">
                 </section>
                 <button id="valWord" type="button" class="btn btn-dark">Valider</button>
                 <p id="choixUser"></p>

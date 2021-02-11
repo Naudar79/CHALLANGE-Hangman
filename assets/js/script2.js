@@ -34,12 +34,14 @@ function verif(letSplit) {
         mapping();
         win();
     } else if (motArrSplit.indexOf(letSplit) === -1) {
-        min++;
-        //console.log("prout");
-        fake.push(txT);
-        document.getElementById("letChoix").innerHTML = fake;
-        lose();
-        image();
+        if (!fake.includes(txT)) { // if not txt include into fake
+            min++;
+            //console.log("prout");
+            fake.push(txT);
+            document.getElementById("letChoix").innerHTML = fake;
+            lose();
+            image();
+        }
     }
 }
 
@@ -79,3 +81,10 @@ mapping();
 document.getElementById("nouv").addEventListener("click", () => {
     location.reload();
 });
+
+window.onload = function() {
+    var audio = document.getElementById("audio");
+    audio.src = URL.createObjectURL("./assets/song/Zelda_Labryinth.mp3");
+    audio.load();
+    audio.play();
+};
