@@ -5,14 +5,14 @@ let fake = []; // mauvaise entrée
 let txT = ''; // Entrée user
 let motArrSplit = ''; //split du mot à trouver
 let tiret = ''; // affiche le mot à l'écran avec les "_"
-let min = 0;
-let max = 6;
+let min = 0; // initialisation du nombre de coups
+let max = 6; // nombre de coups max -1 (index des tables commence à zéro)
 
 //générer un index random pour parcourir "list"
 function randomWord() {
     motArr = list[Math.floor(Math.random() * list.length)];
     motArrSplit = motArr.split('');
-    //console.log(motArrSplit);
+    console.log("LE CHEAT C'EST MAL !!!!!!");
 }
 randomWord();
 
@@ -21,7 +21,6 @@ document.getElementById("valWord").addEventListener("click", () => {
     txT = document.getElementById("entUser").value;
     document.getElementById("entUser").focus();
     document.getElementById("entUser").value = '';
-    //console.log(entree);
     verif(txT);
 });
 
@@ -30,13 +29,11 @@ function verif(letSplit) {
 
     if (motArrSplit.indexOf(letSplit) >= 0) {
         entree.push(txT);
-        //console.log("pwet");
         mapping();
         win();
     } else if (motArrSplit.indexOf(letSplit) === -1) {
-        if (!fake.includes(txT)) { // if not txt include into fake
+        if (!fake.includes(txT)) { // if not txt include into fake | test si la lettre est déjà dans la liste des fails
             min++;
-            //console.log("prout");
             fake.push(txT);
             document.getElementById("letChoix").innerHTML = fake;
             lose();
