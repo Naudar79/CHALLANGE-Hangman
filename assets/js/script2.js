@@ -7,6 +7,7 @@ let motArrSplit = ''; //split du mot à trouver
 let tiret = ''; // affiche le mot à l'écran avec les "_"
 let min = 0; // initialisation du nombre de coups
 let max = 6; // nombre de coups max -1 (index des tables commence à zéro)
+//--------------------------------------------------------------------------------------------
 
 //générer un index random pour parcourir "list"
 function randomWord() {
@@ -15,14 +16,16 @@ function randomWord() {
     console.log("LE CHEAT C'EST MAL !!!!!!");
 }
 randomWord();
+//--------------------------------------------------------------------------------------------
 
-//capter l'entée au clavier de l'utilisateur
+//capter l'entée au clavier de l'input(entUser) au clique du bouton(valWord)
 document.getElementById("valWord").addEventListener("click", () => {
     txT = document.getElementById("entUser").value;
     document.getElementById("entUser").focus();
     document.getElementById("entUser").value = '';
     verif(txT);
 });
+//--------------------------------------------------------------------------------------------
 
 //comparer chaque lettre mot random à l'entrée utilisateur
 function verif(letSplit) {
@@ -41,7 +44,7 @@ function verif(letSplit) {
         }
     }
 }
-
+//--------------------------------------------------------------------------------------------
 
 //Condition de victoire et de défaite 
 function win() {
@@ -60,11 +63,14 @@ function lose() {
     }
 }
 
+//--------------------------------------------------------------------------------------------
+
 //Défilement image
 function image() {
     document.getElementById("pendu").src = './assets/img/' + min + '.png';
 }
 image();
+//--------------------------------------------------------------------------------------------
 
 //Mapping du mot à trouver
 function mapping() {
@@ -73,6 +79,7 @@ function mapping() {
 
 }
 mapping();
+//--------------------------------------------------------------------------------------------
 
 // démarrer une nouvelle partie au clique du bouton
 document.getElementById("nouv").addEventListener("click", () => {

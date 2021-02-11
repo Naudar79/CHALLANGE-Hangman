@@ -5,39 +5,28 @@ Jeu du pendu en version minimaliste et rétro. Ce jeu est responsive.
 ## Pour commencer
 
 Pour jouer de façon potimale, il faut enter une et une seule lettre dans la case prévue à cet effet et cliquer sur le bouton valider. 
-L'application va tester si la lettre est contenu dans la mot à trouver. Si c'est le cas, elle remplace les "_" par la lettre à/aux emplacement(s) correct(s). Dans le cas contraire, si la lettre n'est pas déjà rentrée, 
+L'application va tester si la lettre est contenu dans la mot à trouver. Si c'est le cas, elle remplace les "_" par la lettre à/aux emplacement(s) correct(s). Dans le cas contraire, si la lettre n'est pas déjà rentrée, elle l'afiche dans la partie des mauvaises lettres. 
+Le jeu se termine si le joueur trouve le mot avant les 7 essais soit s'il ne trouve pas et donc perd la partie. 
 
 
 ### Pré-requis
 
-Ce qu'il est requis pour commencer avec votre projet...
-
-- Programme 1
-- Programme 2
-- etc...
+Pour pouvoir jouer, il vous faut un terminal fixe ou mobil ayant un accès à internet. 
 
 ### Installation
 
-Les étapes pour installer votre programme....
-
-Dites ce qu'il faut faire...
-
-_exemple_: Executez la commande ``telnet mapscii.me`` pour commencer ensuite [...]
-
-
-Ensuite vous pouvez montrer ce que vous obtenez au final...
+Le jeu est disponible directement par internet, il ne nécessite donc pas d'installation.
 
 ## Démarrage
 
-Dites comment faire pour lancer votre projet
+Pour démarrer le projet, il suffit de se rendre à l'adresse : https://naudar79.github.io/CHALLANGE-Hangman/
 
 ## Fabriqué avec
 
-Entrez les programmes/logiciels/ressources que vous avez utilisé pour développer votre projet
-
-_exemples :_
-* [Materialize.css](http://materializecss.com) - Framework CSS (front-end)
-* [Atom](https://atom.io/) - Editeur de textes
+* HTML
+* CSS
+* Bootstrap
+* JavaScript
 
 ## Contribution
 
@@ -49,10 +38,9 @@ _exemples :_
 V 1.0
 
 ## Auteurs
-Listez le(s) auteur(s) du projet ici !
 
 > Arnaud W
 
 ## License
 
-N/D  Ce projet est sous licence ``exemple: WTFTPL`` - voir le fichier [LICENSE.md](LICENSE.md) pour plus d'informations
+N/D  Ce projet n'est sous aucune licence.
