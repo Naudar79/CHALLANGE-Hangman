@@ -34,6 +34,11 @@ h4 {
     color: black;
 }
 
+#pendu {
+    width: 200px;
+    height: auto;
+}
+
 #write {
     /*Container de l'input entUser (ou l'utilisateur entre la lettre) et du bouton valWord (bouton de validation)*/
     margin-top: 1rem;
