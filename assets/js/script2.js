@@ -1,4 +1,4 @@
-let list = ["cheval", "rouler", "moderne", "neige", "orange", "ordinateur", "potiron", "ours", "pays", "pizza", "classe", "formation", "hamburger", "sauce"];
+const list = ["cheval", "rouler", "moderne", "neige", "orange", "ordinateur", "potiron", "ours", "pays", "pizza", "classe", "formation", "hamburger", "sauce"];
 let motArr = ''; // reslutat mot random
 let entree = []; //stockage saisie user
 let fake = []; // mauvaise entrée
@@ -6,7 +6,7 @@ let txT = ''; // Entrée user
 let motArrSplit = ''; //split du mot à trouver
 let tiret = ''; // affiche le mot à l'écran avec les "_"
 let min = 0; // initialisation du nombre de coups
-let max = 6; // nombre de coups max -1 (index des tables commence à zéro)
+const max = 6; // nombre de coups max -1 (index des tables commence à zéro)
 //--------------------------------------------------------------------------------------------
 
 //générer un index random pour parcourir "list"
