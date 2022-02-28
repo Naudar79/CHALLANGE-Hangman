@@ -5,7 +5,7 @@ Jeu du pendu en version minimaliste et rétro. Ce jeu est responsive.
 ## Pour commencer
 
 Pour jouer de façon potimale, il faut enter une et une seule lettre dans la case prévue à cet effet et cliquer sur le bouton valider. 
-L'application va tester si la lettre est contenu dans la mot à trouver. Si c'est le cas, elle remplace les "_" par la lettre à/aux emplacement(s) correct(s). Dans le cas contraire, si la lettre n'est pas déjà rentrée, elle l'afiche dans la partie des mauvaises lettres. 
+L'application va tester si la lettre est contenue dans la mot à trouver. Si c'est le cas, elle remplace les "_" par la lettre à/aux emplacement(s) correct(s). Dans le cas contraire, si la lettre n'est pas déjà rentrée, elle l'affiche dans la partie des mauvaises lettres. 
 Le jeu se termine si le joueur trouve le mot avant les 7 essais soit s'il ne trouve pas et donc perd la partie. 
 
 
